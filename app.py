@@ -12,7 +12,7 @@ import re
 # Load environment variables
 load_dotenv()
 GOOGLE_API_KEY = os.getenv("GOOGLE_API_KEY")
-AI71_API_KEY = "api71-api-4cc4a01e-6d44-424a-b28f-38fe59855776"
+AI71_API_KEY = "YOUR_API"
 
 genai.configure(api_key=GOOGLE_API_KEY)
 
