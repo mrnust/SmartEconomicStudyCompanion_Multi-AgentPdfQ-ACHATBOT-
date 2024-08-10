@@ -14,6 +14,8 @@ Check out the live demo of AI Powered Economics Tutor [here](https://huggingface
   
 - **Vector Storage:** Embeddings are stored in a FAISS vector database for quick and efficient access.
 
+- **Retrieval-Augmented Generation (RAG):** Combines the power of retrieval and generation to provide accurate and contextually relevant responses. This feature allows the chatbot to pull information from stored embeddings and generate refined answers tailored to the user's query.
+
 - **Chatbot Development:**
     - **Initial Response Generation:** Gemini-pro LLM generates initial responses to user queries.
     - **Response Refinement and Translation:** FALCON 180B refines these responses and translates them into Urdu.
@@ -36,7 +38,13 @@ git clone https://github.com/mrnust/SmartEconomicStudyCompanion_Multi-AgentPdfQ-
 pip install -r requirements.txt
 ```
 
-3. Run the application:
+3. Run the load.py script to upload PDFs to the database:
+
+```
+python load.py
+```
+
+4. Run the application:
 
 ```
 python app.py
